@@ -12,3 +12,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+	font-family: Lora;
+}
+
+h4{
+	font-family: Source Sans Pro
+}
+
+p {
+	font-family: Lora;
+	font-size: 40px;
+	padding: 20px;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+/*.brand-logo{
+	font-family: Darkstone;
+}
+
+.article {
+	margin: 5%;
+}
+
+.container{
+	width: 900px;
+}
+
+*/

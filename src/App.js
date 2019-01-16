@@ -1,28 +1,52 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import classnames from "classnames";
+import Responsive from "react-responsive-decorator";
+import Article from './components/Article';
+import Navbar from './components/Navbar';
+import { Switch, Route, Link } from 'react-router-dom';
+
 
 class App extends Component {
+  state = {
+    isMobile: false
+  }
+
+  componentDidMount = () => {
+    this.props.media({ minWidth: 320 }, () => {
+      this.setState({
+        isMobile: true
+      })
+    })
+
+    this.props.media({ maxWidth: 2768 }, () => {
+      this.setState({
+        isMobile: false
+      })
+    })
+  }
   render() {
+    const { isMobile } = this.state;
+    const { className, ...props} = this.props
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={classnames("App", className)}>
+      <div>
+          {
+            isMobile ? 
+            <div>
+              <Navbar />
+              <Article />
+            </div>
+            :
+            <div>
+              <Navbar />
+                <Article />
+            </div>
+          }
+      </div>
+      
       </div>
     );
   }
 }
 
-export default App;
+export default Responsive(App);
