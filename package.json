@@ -5,8 +5,12 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "classnames": "^2.2.6",
+    "lightbox-react": "^0.3.7",
+    "mdbreact": "^4.8.7",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-image-lightbox": "^5.1.0",
+    "react-images": "^0.5.19",
     "react-responsive-decorator": "0.0.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3"

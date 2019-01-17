@@ -1,47 +1,90 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 
 h1 {
-	font-family: Lora;
+	border-top: 1px solid #2f2f2f;
+	font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+	font-size: 6vw;
+	text-align: left;
+	margin-top: 2%;
 }
 
-h4{
-	font-family: Source Sans Pro
+h6{
+	font-family: nyt-imperial, georgia, "times new roman", times, serif;
+	text-align: left;
+	font-size: 3vw;
+	margin-top: 3%;
 }
 
 p {
-	font-family: Lora;
-	font-size: 40px;
-	padding: 20px;
-	text-align: center;
+	font-family: 'Droid Serif';
+	font-size: 3vw;
+	margin-top: 5%;
+	word-spacing: 1px;
+}
+
+span{
+	font-family: nyt-imperial, georgia, "times new roman", times, serif;
+	font-size: 2vw;
+	letter-spacing: normal;
+	word-spacing: 2px;
 }
 
 a:link {
 	text-decoration: none;
 }
 
-/*.brand-logo{
-	font-family: Darkstone;
+
+.photo-caption{
+	
+	margin-top: 1%;
+	font-size: 1vw;
 }
 
-.article {
-	margin: 5%;
+.carousel {
+  max-width: 100%;
+  margin-top: 5%;
+  height: auto;
+  color: black;
+}
+
+.article-author {
+	margin-top: 4%;
+}
+
+.date{
+
+	margin-top: 4%;
+}
+
+.color{
+	background-color: #C8F3F8;
+	max-width: 100%;
+}
+
+.space{
+	height: 23px;
+}
+
+.citation{
+	border-top: 1px solid #2f2f2f;
+	border-bottom: 1px solid;
+	font-size: 5.5vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .container{
-	width: 900px;
+	margin-top: 5%;
 }
 
-*/
+.photo-container:hover .overlay{
+  opacity: 1;
+}

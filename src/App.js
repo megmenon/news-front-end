@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import classnames from "classnames";
 import Responsive from "react-responsive-decorator";
 import Article from './components/Article';
-import Navbar from './components/Navbar';
 import { Switch, Route, Link } from 'react-router-dom';
 
 
@@ -33,13 +32,11 @@ class App extends Component {
           {
             isMobile ? 
             <div>
-              <Navbar />
               <Article />
             </div>
             :
             <div>
-              <Navbar />
-                <Article />
+              <Article />
             </div>
           }
       </div>
