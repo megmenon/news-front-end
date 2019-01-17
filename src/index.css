@@ -7,11 +7,23 @@ body {
 
 
 h1 {
-	border-top: 1px solid #2f2f2f;
+	border-top: 1px solid #E33E2D;
 	font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
 	font-size: 6vw;
 	text-align: left;
+	padding: 3px;
 	margin-top: 2%;
+}
+
+h2{
+	font-size: 2vw;
+	margin-top: -3%;
+	font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+	background-color: black;
+	color: white;
+	width: 23%;
+	padding: 10px;
+	padding-left: 20px;
 }
 
 h6{
@@ -35,10 +47,9 @@ span{
 	word-spacing: 2px;
 }
 
-a:link {
-	text-decoration: none;
+.container{
+	margin-top: 5%;
 }
-
 
 .photo-caption{
 	
@@ -55,6 +66,7 @@ a:link {
 
 .article-author {
 	margin-top: 4%;
+	font-family: American Typewriter, serif;
 }
 
 .date{
@@ -81,10 +93,32 @@ a:link {
     margin: 0 auto;
 }
 
-.container{
-	margin-top: 5%;
+.social-icons{
+	margin-top: 2%;
 }
 
-.photo-container:hover .overlay{
-  opacity: 1;
+.google{
+	border-radius: 50%;
+	color: red;
+	font-size: 24px;
 }
+
+
+.facebook{
+	border-radius: 50%;
+	color: blue;
+	font-size: 24px;
+}
+
+.twitter{
+	border-radius: 50%;
+	color: #41A1F2;
+	font-size: 24px;
+}
+
+.mail{
+	border-radius: 50%;
+	color: black;
+	font-size: 24px;
+}
+

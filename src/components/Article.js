@@ -81,13 +81,20 @@ class Article extends Component {
 		return (
 			<div className="article">
 			<article className="container">
+				<h2>Local / Bay Area </h2>
 				<h1><b>New Year's Eve in San Francisco</b></h1>
-				<h6>"Estimated 200,000 people were expected for the midnight fireworks, because 2018 comes along only once."</h6>
+				<h6><i>"Estimated 200,000 people were expected for the midnight fireworks, because 2018 comes along only once."</i></h6>
 				 <div className="article-author">
 				 	<span><b>By Richard Hansen</b></span>
 				 </div>
 				  <div className="date">
 				 	<span>December 31, 2017</span>
+				 </div>
+				 <div className="social-icons">
+				 <button className="google"><i className="fa fa-google"></i></button>
+				 <button className="facebook" style={{marginLeft: '1%'}}><i className="fa fa-facebook-square"></i></button>
+				 <button className="twitter" style={{marginLeft: '1%'}}><i className="fa fa-twitter"></i></button>
+				 <button className="mail" style={{marginLeft: '1%'}}><i className="fa fa-envelope"></i></button>
 				 </div>
 				<div className="photo-container">
 					<div onClick={this.handleOpen}> 
@@ -127,7 +134,7 @@ class Article extends Component {
 					 />
 				</div>
 				 <div className="photo-caption">
-				 	<span className="text-muted"> Rob Smith for The San Francisco Chronicle </span>
+				 	<span className="text-muted"> New Year Photos by Rob Smith </span>
 				 </div>
 				<p>
 					It wasn’t 2017’s fault, but a lot of people on Sunday were ready for it to scram.
